@@ -5,6 +5,7 @@ import randomIndex from "./helpers/indexRandom"
 import "./App.css"
 import Headings from "./components/Headings"
 import Cards from "./components/Cards"
+import Buttons from "./components/Buttons"
 
 
 
@@ -30,7 +31,7 @@ function App() {
           {/* contenido */}
           <Cards datos = {phrase}/>
           {/* boton */}
-          <button onClick={changePhrase} className="btn">Ver otro</button>
+          <Buttons func = {changePhrase}/>
         </div>
       </div>
     </>
